@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <li class="menuOptions showContent">My tasks</li>
+            <li class="menuOptions">In Progress</li>
+            <li class="menuOptions">Completed</li>
+        </div>
+    </div>
+    <div class="tasksArea">
+        <div class="container">
+            <div id="addTask">＋ Add Task</div>
+            <div class="taskContainer">
+                <div class="task">
+                    <div class="topicArea">
+                        <input type="checkbox" name="" id="" class="isCompleted">
+                        <input class="titleInput" type="text" name="title" value="" placeholder="Type Something Here...">
+                        <div class="statusArea">
+                            <span class="star">
+                                <i class="far fa-star"></i>
+                            </span>
+                            <span class="edit">
+                                <i class="far fa-edit"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="taskBody">
+                        <div class="taskContent deadline">
+                            <i class="far fa-calendar-alt"></i>
+                            <div class="topic">
+                                <span>Deadline</span>
+                            </div>
+                            <div class="content">
+                                <input class="date" type="date" name="" id="">
+                                <input class="time" type="time" name="" id="">
+                            </div>
+                        </div>
+                        <div class="taskContent file">
+                            <i class="far fa-file"></i>
+                            <div class="topic">
+                                <span>File</span>
+                            </div>
+                            <div class="content">
+                                <input type="file" name="" id="upload">
+                                <label for="upload">＋</label>
+                            </div>
+                        </div>
+                        <div class="taskContent comment">
+                            <i class="far fa-comment-dots"></i>
+                            <div class="topic">
+                                <span>Comment</span>
+                            </div>
+                            <div class="content">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Type your memo here..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btnArea">
+                        <div class="cancelTemplate">✕ Cancel</div>
+                        <div class="add">＋ Add Task</div>
+                    </div>
+                </div>
+                <div class="myTasks">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

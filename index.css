@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto-Medium;
+}
+.header {
+    width: 100%;
+    background-color: #4a90e2;
+}
+.header .container {
+    width: 620px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.header .container .menuOptions {
+    width: 33.333%;
+    display: inline-block;
+    text-align: center;
+    height: 76px;
+    line-height: 76px;
+    color: #00408b;
+    font-size: 24px;
+}
+.header .container .menuOptions.showContent {
+    color: #fff;
+}
+.header .container .menuOptions.showContent:after{
+    content: '';
+    width: 100%;
+    height: 5px;
+    display: block;
+    background-color: #00408b;
+    position: relative;
+    bottom: 5px;
+}
+.tasksArea {
+    background-color: #e1e1e1;
+    padding-top: 24px;
+    min-height: 100vh;
+}
+.tasksArea .container {
+    width: 620px;
+    margin: 0 auto;
+}
+#addTask {
+    width: 100%;
+    border: 2px solid #c8c8c8;
+    height: 65px;
+    line-height: 65px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding-left: 33px;
+    color: #c8c8c8;
+    font-size: 24px;
+    font-family: Roboto-Regular;
+    background-color: #fff;
+}
+.tasksArea .container .taskContainer .task {
+    margin-bottom: 16px;
+    display: none;
+}
+.tasksArea .container .taskContainer .task,
+.tasksArea .container .taskContainer .newTask {
+    width: 100%;
+}
+.tasksArea .container .taskContainer .task .topicArea,
+.tasksArea .container .taskContainer .newTask .topicArea {
+    margin-top: 8px;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 5px 5px 0px 0px;
+    height: 76px;
+    box-sizing: border-box;
+    padding: 24px 32px;
+    box-shadow: 0 0px 4px 0 #C8C8C8;
+}
+.tasksArea .container .taskContainer .task .topicArea .isCompleted,
+.tasksArea .container .taskContainer .newTask .topicArea .isCompleted {
+    margin: 0;
+    vertical-align: middle;
+}
+.tasksArea .container .taskContainer .task .topicArea .titleInput,
+.tasksArea .container .taskContainer .newTask .topicArea .titleInput {
+    font-size: 24px;
+    color: #000;
+    vertical-align: middle;
+    line-height: 28px;
+    background-color: transparent;
+    border: 0;
+    margin-left: 20px;
+}
+.tasksArea .container .taskContainer .task .topicArea .titleInput::placeholder,
+.tasksArea .container .taskContainer .newTask .topicArea .titleInput::placeholder {
+    color: #c8c8c8;
+}
+.tasksArea .container .taskContainer .task .topicArea .title,
+.tasksArea .container .taskContainer .newTask .topicArea .title {
+    font-size: 24px;
+    color: #000;
+    vertical-align: middle;
+    line-height: 28px;
+}
+.tasksArea .container .taskContainer .task .topicArea .statusArea,
+.tasksArea .container .taskContainer .newTask .topicArea .statusArea {
+    display: inline-block;
+    float: right;
+    line-height: 28px;
+
+}
+.tasksArea .container .taskContainer .task .topicArea .statusArea span:nth-child(2),
+.tasksArea .container .taskContainer .newTask .topicArea .statusArea span:nth-child(2) {
+    margin-left: 32px;
+}
+.tasksArea .container .taskContainer .task .taskBody,
+.tasksArea .container .taskContainer .newTask .taskBody {
+    padding: 24px 78px 24px 96px;
+    background: #F2F2F2;
+    box-shadow: 0 0px 4px 0 #C8C8C8;
+    margin-top: 3px;
+    position: relative;
+}
+.tasksArea .container .taskContainer .task .taskBody .taskContent .topic,
+.tasksArea .container .taskContainer .newTask .taskBody .taskContent .topic {
+    display: inline-block;
+    vertical-align: middle;
+}
+.tasksArea .container .taskContainer .task .taskBody .taskContent .topic span,
+.tasksArea .container .taskContainer .newTask .taskBody .taskContent .topic span {
+    font-family: Roboto-Medium;
+    font-size: 20px;
+    color: #000000;
+}
+.tasksArea .container .taskContainer .task .taskBody .taskContent i,
+.tasksArea .container .taskContainer .newTask .taskBody .taskContent i {
+    position: absolute;
+    left: 72px;
+    line-height: 28px;
+}
+.tasksArea .container .taskContainer .task .taskBody .taskContent.deadline .content input,
+.tasksArea .container .taskContainer .newTask .taskBody .taskContent.deadline .content input {
+    border: 0;
+    border-radius: 2px;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 8px 0 8px 16px;
+    font-size: 16px;
+    margin-top: 8px;
+}
+.tasksArea .container .taskContainer .task .taskBody .taskContent.file .content input,
+.tasksArea .container .taskContainer .newTask .taskBody .taskContent.file .content input {
+    position: fixed;
+    left: -500px;
+    top: 0;
+}
+.tasksArea .container .taskContainer .task .taskBody .taskContent.file .content label,
+.tasksArea .container .taskContainer .newTask .taskBody .taskContent.file .content label {
+    display: block;
+    height: 32px;
+    width: 32px;
+    background: #C8C8C8;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    margin-top: 8px;
+}
+.tasksArea .container .taskContainer .task .taskBody .taskContent.file,
+.tasksArea .container .taskContainer .task .taskBody .taskContent.comment,
+.tasksArea .container .taskContainer .newTask .taskBody .taskContent.file,
+.tasksArea .container .taskContainer .newTask .taskBody .taskContent.comment {
+    margin-top: 27px;
+}
+.tasksArea .container .taskContainer .task .taskBody .taskContent.comment .content textarea,
+.tasksArea .container .taskContainer .newTask .taskBody .taskContent.comment .content textarea {
+    width: 100%;
+    border: 0;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    resize: none;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+.tasksArea .container .taskContainer .task .taskBody .taskContent.comment .content textarea::placeholder,
+.tasksArea .container .taskContainer .newTask .taskBody .taskContent.comment .content textarea::placeholder {
+    font-size: 16px;
+    color: #c8c8c8;
+    font-family: Roboto-Regular;
+}
+.tasksArea .container .taskContainer .task .btnArea,
+.tasksArea .container .taskContainer .newTask .btnArea {
+    width: 100%;
+    font-size: 0;
+    box-shadow: 0 4px 4px 0 #C8C8C8;
+    border-radius: 0px 0px 5px 5px;
+}
+.tasksArea .container .taskContainer .task .btnArea > *,
+.tasksArea .container .taskContainer .newTask .btnArea > * {
+    display: inline-block;
+    width: 50%;
+    height: 60px;
+    font-size: 24px;
+    line-height: 60px;
+    text-align: center;
+}
+.tasksArea .container .taskContainer .task .btnArea .cancelTemplate,
+.tasksArea .container .taskContainer .newTask .btnArea .cancel {
+    background-color: #fff;
+    font-family: Roboto-Regular;
+    font-size: 24px;
+    color: #D0021B;
+    border-radius: 0 0 0 5px;
+}
+.tasksArea .container .taskContainer .task .btnArea .add,
+.tasksArea .container .taskContainer .newTask .btnArea .save {
+    background-color: #4a90e2;
+    color: #fff;
+    border-radius: 0 0 5px 0;
+}
